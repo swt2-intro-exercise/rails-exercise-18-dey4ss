@@ -1,11 +1,14 @@
 <h1>New Author</h1>
 
-
-<%= label_tag("first name:\t") %>
-<%= text_field(:author, :first_name) %>
-<br />
-<%= label_tag("last name:\t") %>
-<%= text_field(:author, :last_name) %>
-<br />
-<%= label_tag("homepage:\t") %>
-<%= text_field(:author, :homepage) %>
+<%= form_tag do %>
+    <%= label_tag("first name:\t") %>
+    <%= text_field(:author, :first_name) %>
+    <br />
+    <%= label_tag("last name:\t") %>
+    <%= text_field(:author, :last_name) %>
+    <br />
+    <%= label_tag("homepage:\t") %>
+    <%= text_field(:author, :homepage) %>
+    <br />
+    <%= submit_tag("Submit!") %>
+<% end %>
