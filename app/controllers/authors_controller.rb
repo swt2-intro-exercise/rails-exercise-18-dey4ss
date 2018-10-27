@@ -4,6 +4,14 @@ class AuthorsController < ApplicationController
         @authors = Author.all
     end
 
+    def new
+        @author = Author.new
+    end
+
+    def show
+        @author = Author.find(params[:id])
+    end
+
     def create
         @author = Author.new(author_params)
 
@@ -14,11 +22,7 @@ class AuthorsController < ApplicationController
         end
     end
 
-    def new
-        @author = Author.new
-    end
-
-    def show
+    def edit
         @author = Author.find(params[:id])
     end
 
