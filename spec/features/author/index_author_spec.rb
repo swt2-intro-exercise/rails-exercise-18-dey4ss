@@ -21,5 +21,10 @@ describe "Index author page", type: :feature do
     #    expect(page).to have_link(new_author_path)
     #end
 
+    it "should have a heading for the name column" do
+        visit authors_path
+        expect(page).to have_css("th", text: "Name")
+    end
+
 end
   
