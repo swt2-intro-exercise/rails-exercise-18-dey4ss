@@ -4,6 +4,6 @@ FactoryBot.define do
     venue { "Mind 49: 433-460" }
     year { 1950 }
     authors {build_list :author, 1}
-    id {1}
+    id { 1 }
   end
 end
