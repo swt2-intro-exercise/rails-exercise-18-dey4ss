@@ -1,5 +1,7 @@
 # SWT2 2018/19 - Introductory Exercise
 
+[![Build Status](https://travis-ci.com/swt2-intro-exercise/rails-exercise-18-dey4ss.svg?branch=master)](https://travis-ci.com/swt2-intro-exercise/rails-exercise-18-dey4ss)
+
 This is an interactive [Ruby on Rails 5](https://rubyonrails.org/) exercise, based partly on the ["Getting Started with Rails"](https://guides.rubyonrails.org/getting_started.html) guide. Interactivity is provided by opening issues in the GitHub issue tracker (through a CI server) that contain instructions on what tasks to tackle next.
 
 We prepared an application stub of an academic paper management system for you that has a failing test case.
