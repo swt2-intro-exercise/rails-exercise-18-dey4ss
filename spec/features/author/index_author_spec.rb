@@ -42,5 +42,14 @@ describe "Index author page", type: :feature do
         end
     end
 
+    it "can delete an author" do
+        author = @authors[1]
+        id = author.id
+        visit authors_path
+        find("a[data-method='delete'][href='/authors/#{author.id}']").click
+
+        expect(Author.exists?(id: id)).to eq false
+    end
+
 end
   
